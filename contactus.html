@@ -1,175 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/favicon/site.webmanifest" />
-
-  <link rel="stylesheet" href="CSS/main.min.css">
-  <link rel="stylesheet" href="CSS/contactus.min.css">
-  <script src="js/main.js" defer></script>
-  <title>Contact Us | Singha Security Solutions</title>
-  <meta name="description" content="Contact Singha Security Solutions for professional security services. Get a free consultation today for CCTV, alarms, and personal security needs." />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Singha Security Solutions</title>
+    <link rel="stylesheet" href="./CSS/main.min.css">
+    <link rel="stylesheet" href="./CSS/contact.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <header id="navbar">
-    <div class="logo">
-        <div class="logo-img">
-            <img src="assets/images/company-logo.png" alt="">
+    <div class="top-bar">
+        <div class="contact-info">
+            <span>071 982 9694/ 074 150 6033</span>
+            <span>info.singasec@gmail.com</span>
         </div>
-        <h2>Singha Security</h2>
+        <div class="company-info">
+            <span>Singha security (PVT) LTD</span>
+            <span>6/3B, Rathnapura Rd., Ilimba Junction, Munagama, Horana.</span>
+        </div>
+        <div class="iso-badge">
+            <img src="assets/images/iso-certified.png" alt="ISO Certified">
+        </div>
     </div>
 
-    <nav class="nav-link-container">
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <!-- <a href="testimonials.html">Testimonials</a> -->
-        <a href="contactus.html">Contact Us</a>
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="assets/images/company-logo.png" alt="Singha Security Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">HOME</a>
+            <a href="aboutus.html" class="nav-item">ABOUT US ▼</a>
+            <a href="#" class="nav-item">SERVICES</a>
+            <a href="body2.html" class="nav-item">CAREERS</a>
+            <a href="body.html" class="nav-item">TRAINING & DEVELOPMENT</a>
+            <a href="#" class="nav-item">CSR</a>
+            <a href="contactus.html" class="nav-item active">CONTACT US</a>
+        </div>
     </nav>
 
-    <div class="quick-link-container">
-      <a href="contactus.html">
-          <button class="btn">Obtain a Proposal</button>
-      </a>
-      <a href="contactus.html#contact-section">
-          <button class="btn">Contact Us</button>
-      </a>
-  </div>
+    <main>
+        <h1 class="page-title">CONTACT US</h1>
 
-    <div class="menu-container">
-        <div id="menu-icon">
-            <div class="bar bar-1"></div>
-            <div class="bar bar-2"></div>
-            <div class="bar bar-3"></div>
-        </div>
-        <div class="dropdown-menu hidden">
-            <a href="index.html" class="active"><img src="assets/icons/icons8-home-25.png" alt="">Home</a>
-            <a href="aboutus.html"><img src="assets/icons/icons8-about-us-25.png" alt=""> About Us</a>
-            <!-- <a href="#"><img src="assets/icons/icons8-verify-25.png" alt=""> Testimonials</a> -->
-            <a href="contactus.html"><img src="assets/icons/icons8-contact-us-25.png" alt=""> Contact Us</a>
-        </div>
-    </div>
-</header>
+        <div class="contact-container">
+            <div class="contact-info-section">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit us</h3>
+                    <p>6/3B, Rathnapura Rd., Ilimba Junction, Munagama, Horana.</p>
+                </div>
 
-<main>
-   <!-- Message Form Section -->
-<div class="Fmessage-section">
-  <div class="Fform-container">
-    <form class="Fcontact-form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="acd0a3e8-78d8-41bf-98a2-661ff0ebb4de">
-      <h2>Contact Us</h2>
-      <div class="Fform-group">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first_name" placeholder="First Name"
-        required minlength="2" maxlength="50" pattern="[A-Za-z ]+">
-      </div>
-      <div class="Fform-group">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last_name" placeholder="Last Name"
-        required minlength="2" maxlength="50" pattern="[A-Za-z ]+">
-      </div>
-      <div class="Fform-group">
-        <label for="company-name">Company Name</label>
-        <input type="text" id="company-name" name="company_name" placeholder="Company Name">
-      </div>
-      <div class="Fform-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="Email" placeholder="Email" required>
-      </div>
-      <div class="Fform-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" 
-        pattern="[0-9]{10}" title="10-digit phone number" placeholder="Phone Number" required>
-      </div>
-      <div class="Fform-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" 
-          maxlength="500" 
-          oninput="this.value = this.value.replace(/<[^>]*>/g, '')"
-          placeholder="Message" required></textarea>
-      </div>
-      <button type="submit" class="send-btn">Send Message</button>
-    </form>
-  </div>
-</div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email us</h3>
+                    <p>info.singasec@gmail.com</p>
+                </div>
 
-</main>
-  
-  <main class="contact-section" id="contact-section">
-    <div class="info-box">
-      <h2>Get in touch</h2>
-      <p><strong>Visit us</strong><br>6/3B, Rathnapura Rd.,
-        Ilimba Junction, Munagama,
-        Horana.</p><br>
-      <p><strong>Chat to us</strong><br>info.singasec@gmail.com</p><br>
-      <p><strong>Call us</strong><br>Always On, Always Here – 24/7, 365 Days of Service!<br> 071 982 9694/ 074 150 6033</p><br>
-      <p><strong>Social media</strong></p>
-      <div class="social-icons bg-image-icons">
-        <a href="#" class="facebook-icon" aria-label="Facebook"></a>
-        
-      </div>
-    </div>
-    
-    <!-- Map Frame -->
-    <div class="map-frame">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.532387846491!2d79.89827221602953!3d6.93667489498465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a0ebd23b455%3A0x730853d2d7c6468!2sHorana%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1692620636565!5m2!1sen!2sus" 
-        width="800px" 
-        height="500px" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </main>
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call us</h3>
+                    <p>Always On, Always Here – 24/7, 365 Days of Service!</p>
+                    <p>071 982 9694 / 074 150 6033</p>
+                </div>
+            </div>
 
-
-  <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>About Us</h3>
-            <p>We provide top-notch security services to protect your assets and ensure peace of mind. Trusted by thousands worldwide.</p>
-        </div>
-        <div class="footer-column">
-            <h3>Services</h3>
-            <ul>
-                <li><a href="#">personal Security</a></li>
-                <li><a href="#">Security For Vip</a></li>
-                <li><a href="#">Bank Security</a></li>
-                <li><a href="#">Security Consultants</a></li>
-                <li><a href="#">CCTV & Alarm System</a></li>
-                <li><a href="#">Event Management</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Contact Us</h3>
-            <p>Email: info.singhasec@gmail.com</p>
-            <p>Phone: 074 150 6033</p>
-            <p>Phone: 071 982 9694</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="contact-form-section">
+                <h2>Get in touch</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="companyName" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> Singha Security Solutions (Pvt) Ltd. All rights reserved.</p>
-  </div>
-  
-  <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</footer>
+    </main>
 
-
-  
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Our Motto</h3>
+                <p>"Ut Secure in Virtute"</p>
+                <p>(The Power to Secure)</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quicklink</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="body2.html">Careers</a></li>
+                    <li><a href="body.html">Training & Development</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Subscribe</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address...">
+                    <button type="submit">SUBMIT NOW</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Singha Security Solutions (Pvt) Ltd. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

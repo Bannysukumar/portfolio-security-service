@@ -1,36 +1,254 @@
+/* Training & Development Page Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: white;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
 }
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+
+.page-title {
+    display: none;
 }
-.section {
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/training-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: #2d2d2d;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
-.section img {
-    width: 300px;
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Training Section */
+.training-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.training-block {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.training-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.training-image {
+    flex: 0 0 45%;
+}
+
+.training-image img {
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.section h2 {
-    color: #ffcc00;
+
+.training-content {
+    flex: 0 0 55%;
+}
+
+.training-content h2 {
+    color: #ffa500;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.training-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ffa500;
+}
+
+.training-content p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.training-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.training-content ul li {
+    color: #fff;
+    margin-bottom: 0.8rem;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.training-content ul li::before {
+    content: '•';
+    color: #ffa500;
+    position: absolute;
+    left: 0;
+}
+
+/* Trusted Partner Section */
+.trusted-partner {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #333;
+}
+
+.trusted-partner h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.trusted-partner p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #ffa500;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #ff8c00;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    padding: 40px 0 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
+.footer-column h3 {
+    color: #ffa500;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
     margin-bottom: 10px;
 }
-.section ul {
-    padding-left: 20px;
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
-.section ul li {
-    margin-bottom: 5px;
+
+.footer-column ul li a:hover {
+    color: #ffa500;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.subscribe-form button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #ff8c00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .training-block {
+        flex-direction: column !important;
+    }
+
+    .training-image,
+    .training-content {
+        flex: 0 0 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
 }

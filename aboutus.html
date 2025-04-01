@@ -13,8 +13,10 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="CSS/main.min.css">
-    <link rel="stylesheet" href="CSS/aboutus.min.css">
+    <link rel="stylesheet" href="./CSS/main.min.css">
+    <link rel="stylesheet" href="./CSS/aboutus.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <script src="./js/main.js" defer></script>
     <script src="./js/aboutus.js" defer></script>
@@ -22,44 +24,34 @@
 </head>
 
 <body>
-    <header id="navbar">
+    <div class="top-bar">
+        <div class="contact-info">
+            <span>071 982 9694/ 074 150 6033</span>
+            <span>info.singasec@gmail.com</span>
+        </div>
+        <div class="company-info">
+            <span>Singha security (PVT) LTD</span>
+            <span>6/3B, Rathnapura Rd., Ilimba Junction, Munagama, Horana.</span>
+        </div>
+        <div class="iso-badge">
+            <img src="assets/images/iso-certified.png" alt="ISO Certified">
+        </div>
+    </div>
+
+    <nav class="main-nav">
         <div class="logo">
-            <div class="logo-img">
-                <img src="assets/images/company-logo.png" alt="">
-            </div>
-            <h2>Singha Security</h2>
+            <img src="assets/images/company-logo.png" alt="Singha Security Logo">
         </div>
-
-        <nav class="nav-link-container">
-            <a href="index.html">Home</a>
-            <a href="aboutus.html">About Us</a>
-            <!-- <a href="testimonials.html">Testimonials</a> -->
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-
-        <div class="quick-link-container">
-            <a href="contactus.html">
-                <button class="btn">Obtain a Proposal</button>
-            </a>
-            <a href="contactus.html#contact-section">
-                <button class="btn">Contact Us</button>
-            </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">HOME</a>
+            <a href="aboutus.html" class="nav-item active">ABOUT US ▼</a>
+            <a href="#" class="nav-item">SERVICES</a>
+            <a href="body2.html" class="nav-item">CAREERS</a>
+            <a href="body.html" class="nav-item">TRAINING & DEVELOPMENT</a>
+            <a href="#" class="nav-item">CSR</a>
+            <a href="contactus.html" class="nav-item">CONTACT US</a>
         </div>
-
-        <div class="menu-container">
-            <div id="menu-icon">
-                <div class="bar bar-1"></div>
-                <div class="bar bar-2"></div>
-                <div class="bar bar-3"></div>
-            </div>
-            <div class="dropdown-menu hidden">
-                <a href="index.html" class="active"><img src="assets/icons/icons8-home-25.png" alt="">Home</a>
-                <a href="aboutus.html"><img src="assets/icons/icons8-about-us-25.png" alt=""> About Us</a>
-                <!-- <a href="#"><img src="assets/icons/icons8-verify-25.png" alt=""> Testimonials</a> -->
-                <a href="contactus.html"><img src="assets/icons/icons8-contact-us-25.png" alt=""> Contact Us</a>
-            </div>
-        </div>
-    </header>
+    </nav>
 
     <main>
 
@@ -120,8 +112,8 @@
                     <div class="content-text animate-right">
                         <h2>Vision</h2>
                         <p>
-                            “To be the most professional and reliable security solutions partner in the industry by
-                            exceeding our customer’s expectations while valuing our employees.”
+                            "To be the most professional and reliable security solutions partner in the industry by
+                            exceeding our customer's expectations while valuing our employees."
                         </p>
                     </div>
                 </div>
@@ -133,8 +125,8 @@
                     <div class="content-text animate-left">
                         <h2>Mission</h2>
                         <p>
-                            “To provide innovative security solutions with high quality standards in order to help our
-                            clients in preventing losses of life, property, assets and the environment.”
+                            "To provide innovative security solutions with high quality standards in order to help our
+                            clients in preventing losses of life, property, assets and the environment."
                         </p>
                     </div>
                     <div class="content-image animate-right"
@@ -240,7 +232,7 @@
                         <h3>Mr. Eranda Singhabahu</h3>
                         <p><b>Managing Director</b></p>
                         <p>A decorated Army veteran with expertise in defense operations, security management, and human
-                            resources. He served courageously during Sri Lanka’s critical conflict period, leading
+                            resources. He served courageously during Sri Lanka's critical conflict period, leading
                             offensive operations against the LTTE and earning multiple commendations.</p>
                         <p>A retired officer of the Sri Lanka Singha Regiment, he holds an MBA (Human Resources), BA in
                             Defense Management, and a Diploma in HRM. Post-retirement, he transitioned to senior
@@ -277,7 +269,7 @@
                         <p>Mrs Indunil Senevirathna is a professional with vast experience in the cooperate sector. She
                             is well versed of the Administration and Finance who contributes towards the success of the
                             company. This eventually led to a partnership with the company and was positioned
-                            as a Directress.</p>
+                            as a Directress.</p>
 
                     </div>
                 </div>
